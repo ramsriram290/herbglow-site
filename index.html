@@ -1,104 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>HerbGlow – Pure Herbal Care</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-
 <body>
 
 <header class="header">
   <h1>HerbGlow</h1>
-  <p>100% Pure Herbal • No Chemicals • Handmade Care</p>
+  <p>🌿 100% Pure Herbal • Handmade Care</p>
 </header>
 
 <section class="products">
-
-  <div class="card">
-    <img src="images/facewash.jpg" alt="Herbal Face Wash">
-    <h2>Herbal Face Wash</h2>
-    <p>Gentle cleansing with neem & turmeric</p>
-    <p class="price">₹199</p>
-    <a class="btn" href="https://wa.me/918861275896">Buy on WhatsApp</a>
-  </div>
-
-  <div class="card">
-    <img src="images/facepack.jpg" alt="Herbal Face Pack">
+  <div class="product-card">
+    <img src="images/facepack.jpg" alt="Herbal Face Pack" />
     <h2>Herbal Face Pack</h2>
     <p>Natural glow with multani mitti & rose</p>
-    <p class="price">₹149</p>
-    <a class="btn" href="https://wa.me/918861275896">Buy on WhatsApp</a>
-  </div>
+    <span class="price">₹149</span>
 
+    <a
+      class="buy-btn"
+      href="https://wa.me/918861275896?text=Hi%20I%20want%20Herbal%20Face%20Pack"
+      target="_blank"
+    >
+      Buy on WhatsApp
+    </a>
+  </div>
 </section>
 
-<!-- WhatsApp Floating Button -->
-<a href="https://wa.me/918861275896" class="whatsapp-float">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+<a
+  class="whatsapp-float"
+  href="https://wa.me/918861275896"
+  target="_blank"
+>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" />
 </a>
 
 </body>
-</html>
-body {
+
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
   font-family: Arial, sans-serif;
-  background: #f7f9f5;
 }
 
+body {
+  background: #f7f9f5;
+  color: #222;
+}
+
+/* Header */
 .header {
   text-align: center;
   padding: 30px 15px;
-  background: #e6f2ea;
+  background: #ffffff;
 }
 
 .header h1 {
-  margin: 0;
-  color: #1b5e20;
+  font-size: 32px;
 }
 
+.header p {
+  color: #2e7d32;
+  margin-top: 10px;
+}
+
+/* Product Section */
 .products {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 30px 15px;
 }
 
-.card {
-  background: #fff;
-  border-radius: 12px;
-  padding: 15px;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-}
-
-.card img {
+.product-card {
+  background: #ffffff;
   width: 100%;
-  border-radius: 10px;
+  max-width: 360px;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.product-card h2 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #555;
 }
 
 .price {
-  font-size: 20px;
+  display: block;
+  font-size: 22px;
+  font-weight: bold;
   color: #2e7d32;
+  margin: 15px 0;
+}
+
+.buy-btn {
+  display: inline-block;
+  padding: 14px 22px;
+  background: #25d366;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 16px;
   font-weight: bold;
 }
 
-.btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 18px;
-  background: #25d366;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 25px;
-}
-
+/* Floating WhatsApp */
 .whatsapp-float {
   position: fixed;
-  right: 20px;
   bottom: 20px;
+  right: 20px;
+  z-index: 999;
 }
 
 .whatsapp-float img {

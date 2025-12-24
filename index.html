@@ -1,4 +1,6 @@
-d>
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
   <title>HerbGlow – Pure Herbal Care</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,65 +12,66 @@ d>
 
 <header class="header">
   <h1>HerbGlow</h1>
-  <p>🌿 100% Pure Herbal • Handmade Care</p>
+  <p>100% Pure Herbal • No Chemicals • Handmade Care</p>
 </header>
 
 <section class="products">
-  <h2>Our Products</h2>
 
   <div class="card">
     <img src="images/facewash.jpg" alt="Herbal Face Wash">
-    <h3>Herbal Face Wash</h3>
-    <p>Neem & turmeric gentle cleansing</p>
-    <span class="price">₹199</span>
-    <a class="btn" href="https://wa.me/918861275896?text=I%20want%20Herbal%20Face%20Wash">Buy on WhatsApp</a>
+    <h2>Herbal Face Wash</h2>
+    <p>Gentle cleansing with neem & turmeric</p>
+    <p class="price">₹199</p>
+    <a class="btn" href="https://wa.me/918861275896">Buy on WhatsApp</a>
   </div>
 
   <div class="card">
     <img src="images/facepack.jpg" alt="Herbal Face Pack">
-    <h3>Herbal Face Pack</h3>
-    <p>Multani mitti & rose glow</p>
-    <span class="price">₹149</span>
-    <a class="btn" href="https://wa.me/918861275896?text=I%20want%20Herbal%20Face%20Pack">Buy on WhatsApp</a>
+    <h2>Herbal Face Pack</h2>
+    <p>Natural glow with multani mitti & rose</p>
+    <p class="price">₹149</p>
+    <a class="btn" href="https://wa.me/918861275896">Buy on WhatsApp</a>
   </div>
 
 </section>
 
-<a class="whatsapp-float" href="https://wa.me/918861275896" target="_blank">
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/918861275896" class="whatsapp-float">
   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
 </a>
 
 </body>
-</html>body {
+</html>
+body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f8faf7;
-  text-align: center;
+  background: #f7f9f5;
 }
 
 .header {
-  background: #e9f5ec;
-  padding: 30px 10px;
+  text-align: center;
+  padding: 30px 15px;
+  background: #e6f2ea;
 }
 
 .header h1 {
   margin: 0;
-  font-size: 36px;
   color: #1b5e20;
 }
 
 .products {
-  padding: 30px 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
 .card {
   background: #fff;
-  width: 90%;
-  max-width: 320px;
-  margin: 20px auto;
+  border-radius: 12px;
   padding: 15px;
-  border-radius: 14px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
 .card img {
@@ -77,486 +80,27 @@ d>
 }
 
 .price {
-  display: block;
   font-size: 20px;
-  color: #1b5e20;
-  margin: 10px 0;
+  color: #2e7d32;
+  font-weight: bold;
 }
 
 .btn {
   display: inline-block;
-  background: #25D366;
+  margin-top: 10px;
+  padding: 10px 18px;
+  background: #25d366;
   color: #fff;
-  padding: 12px 18px;
-  border-radius: 30px;
   text-decoration: none;
-  font-weight: bold;
+  border-radius: 25px;
 }
 
 .whatsapp-float {
   position: fixed;
-  bottom: 20px;
   right: 20px;
+  bottom: 20px;
 }
 
 .whatsapp-float img {
-  width: 55px;
-}<img src="https://images.unsplash.com/photo-1585238342028-4bbc1b6b5b04" alt="Herbal Face Wash"><img src="https://images.unsplash.com/photo-1615486364462-ef6363adbc18" alt="Herbal Face Pack"><img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1" alt="Herbal Hair Pack"><img src="images/facepack.jpg"><html lang="en">
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>HerbGlow – Pure Herbal Care</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f7f7f2;
-      color: #2f2f2f;
-    }
-
-    header {
-      text-align: center;
-      padding: 30px 15px;
-      background: #e9f3ea;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 36px;
-    }
-
-    header p {
-      color: #2f6b3f;
-      font-size: 16px;
-      margin-top: 10px;
-    }
-
-    .container {
-      padding: 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 12px;
-      padding: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      text-align: center;
-    }
-
-    .card img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      border-radius: 10px;
-    }
-
-    .card h3 {
-      margin: 12px 0 5px;
-    }
-
-    .card p {
-      font-size: 14px;
-      color: #555;
-    }
-
-    .price {
-      font-size: 18px;
-      font-weight: bold;
-      margin: 8px 0;
-      color: #2f6b3f;
-    }
-
-    .buy-btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 18px;
-      background: #25d366;
-      color: white;
-      text-decoration: none;
-      border-radius: 25px;
-      font-weight: bold;
-    }
-
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 1000;
-    }
-
-    .whatsapp-float img {
-      width: 55px;
-    }
-  </style>
-</head>
-
-<body>
-
-<header>
-  <h1>HerbGlow</h1>
-  <p>🌿 100% Pure Herbal • No Chemicals • Handmade Care</p>
-</header>
-
-<div class="container">
-  <h2>Our Products</h2>
-
-  <div class="products">
-
-    <!-- PRODUCT 1 -->
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd" alt="Herbal Face Wash">
-      <h3>Herbal Face Wash</h3>
-      <p>Gentle cleansing with neem & turmeric</p>
-      <div class="price">₹199</div>
-      <a class="buy-btn" href="https://wa.me/918861275896?text=I%20want%20Herbal%20Face%20Wash" target="_blank">
-        Buy on WhatsApp
-      </a>
-    </div>
-
-    <!-- PRODUCT 2 -->
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1611930022126-4f6e5f6a2f18" alt="Herbal Face Pack">
-      <h3>Herbal Face Pack</h3>
-      <p>Natural glow with multani mitti & rose</p>
-      <div class="price">₹149</div>
-      <a class="buy-btn" href="https://wa.me/918861275896?text=I%20want%20Herbal%20Face%20Pack" target="_blank">
-        Buy on WhatsApp
-      </a>
-    </div>
-
-    <!-- PRODUCT 3 -->
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="Herbal Hair Pack">
-      <h3>Herbal Hair Pack</h3>
-      <p>Strengthens hair & reduces dandruff</p>
-      <div class="price">₹249</div>
-      <a class="buy-btn" href="https://wa.me/918861275896?text=I%20want%20Herbal%20Hair%20Pack" target="_blank">
-        Buy on WhatsApp
-      </a>
-    </div>
-
-  </div>
-</div>
-
-<!-- FLOATING WHATSAPP -->
-<a class="whatsapp-float" href="https://wa.me/918861275896" target="_blank">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-</a>
-
-</body>
-</html>d>
-  <meta charset="UTF-8">
-  <title>HerbGlow – Pure Herbal Care</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-
-<header class="hero">
-  <h1>HerbGlow</h1>
-  <p>🌿 100% Pure Herbal • No Chemicals • Handmade Care</p>
-  <a href="https://wa.me/918861275896" class="cta" target="_blank">
-    Order on WhatsApp
-  </a>
-</header>
-
-<section class="products">
-  <h2>Our Products</h2>
-
-  <div class="product-grid">
-
-    <div class="product">
-      <img src="https://images.unsplash.com/photo-1585238342028-4bbc0b6fd1af" alt="Herbal Face Wash">
-      <h3>Herbal Face Wash</h3>
-      <p>Gentle cleansing with neem & turmeric</p>
-      <a href="https://wa.me/918861275896?text=I%20want%20Herbal%20Face%20Wash" target="_blank">
-        Buy Now
-      </a>
-    </div>
-
-    <div class="product">
-      <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd" alt="Glow Cream">
-      <h3>Glow Face Cream</h3>
-      <p>Natural glow with sandal & aloe</p>
-      <a href="https://wa.me/918861275896?text=I%20want%20Glow%20Face%20Cream" target="_blank">
-        Buy Now
-      </a>
-    </div>
-
-    <div class="product">
-      <img src="https://images.unsplash.com/photo-1611930021592-a8cfd5319ceb" alt="Vitamin C Serum">
-      <h3>Radiance C+ Serum</h3>
-      <p>Brightening & skin repair formula</p>
-      <a href="https://wa.me/918861275896?text=I%20want%20Radiance%20C%20Serum" target="_blank">
-        Buy Now
-      </a>
-    </div>
-
-  </div>
-</section>
-
-<!-- WhatsApp Floating Button -->
-<a href="https://wa.me/918861275896" class="whatsapp-float" target="_blank">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
-</a>
-
-</body>
-</html>body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f7f9f4;
-  color: #333;
+  width: 60px;
 }
-
-.hero {
-  text-align: center;
-  padding: 60px 20px;
-  background: #e6f2e1;
-}
-
-.hero h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 18px;
-  color: #2f6b2f;
-}
-
-.cta {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 14px 28px;
-  background: #25D366;
-  color: white;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: bold;
-}
-
-.products {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-  max-width: 1100px;
-  margin: auto;
-}
-
-.product {
-  background: white;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-}
-
-.product img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.product h3 {
-  margin: 15px 0 5px;
-}
-
-.product p {
-  font-size: 14px;
-  color: #555;
-}
-
-.product a {
-  display: inline-block;
-  margin-top: 12px;
-  color: #25D366;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
-}
-
-.whatsapp-float img {
-  width: 55px;
-}<html lang="en">
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>HerbGlow – Pure Herbal Care</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f7f9f5;
-      color: #1f1f1f;
-    }
-
-    header {
-      text-align: center;
-      padding: 50px 20px 30px;
-      background: #ffffff;
-    }
-
-    header h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-
-    .trust-line {
-      color: #2f6f3e;
-      font-weight: 600;
-      font-size: 16px;
-    }
-
-    section {
-      padding: 40px 20px;
-    }
-
-    .section-title {
-      text-align: center;
-      font-size: 24px;
-      margin-bottom: 30px;
-      color: #2f6f3e;
-    }
-
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .card {
-      background: #ffffff;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      text-align: center;
-    }
-
-    .card h3 {
-      margin-top: 10px;
-      margin-bottom: 10px;
-      color: #1f1f1f;
-    }
-
-    .card p {
-      font-size: 14px;
-      color: #555;
-      margin-bottom: 15px;
-    }
-
-    .price {
-      font-weight: bold;
-      color: #2f6f3e;
-      margin-bottom: 15px;
-    }
-
-    .order-btn {
-      display: inline-block;
-      padding: 10px 18px;
-      background: #2f6f3e;
-      color: #ffffff;
-      border-radius: 25px;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    .order-btn:hover {
-      background: #245a32;
-    }
-
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 1000;
-    }
-  </style>
-</head>
-
-<body>
-
-  <!-- HEADER -->
-  <header>
-    <h1>HerbGlow</h1>
-    <p class="trust-line">
-      🌿 100% Pure Herbal • No Chemicals • Handmade Care
-    </p>
-  </header>
-
-  <!-- PRODUCTS -->
-  <section>
-    <h2 class="section-title">Our Products</h2>
-
-    <div class="products">
-
-      <div class="card">
-        <h3>Herbal Face Pack</h3>
-        <p>Skin glow, tan removal, gentle natural care.</p>
-        <div class="price">₹299</div>
-        <a class="order-btn"
-           href="https://wa.me/918861275896?text=Hi%20HerbGlow%2C%20I%20want%20to%20order%20Herbal%20Face%20Pack."
-           target="_blank">
-          Order on WhatsApp
-        </a>
-      </div>
-
-      <div class="card">
-        <h3>Herbal Powder</h3>
-        <p>Multi-purpose powder for face & skin care.</p>
-        <div class="price">₹249</div>
-        <a class="order-btn"
-           href="https://wa.me/918861275896?text=Hi%20HerbGlow%2C%20I%20want%20to%20order%20Herbal%20Powder."
-           target="_blank">
-          Order on WhatsApp
-        </a>
-      </div>
-
-      <div class="card">
-        <h3>Glow Combo Pack</h3>
-        <p>Face Pack + Powder – best results together.</p>
-        <div class="price">₹499</div>
-        <a class="order-btn"
-           href="https://wa.me/918861275896?text=Hi%20HerbGlow%2C%20I%20want%20to%20order%20Glow%20Combo%20Pack."
-           target="_blank">
-          Order on WhatsApp
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/918861275896"
-     class="whatsapp-float"
-     target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-         width="50"
-         alt="WhatsApp">
-  </a>
-
-</body>
-</html>

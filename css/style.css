@@ -127,3 +127,46 @@
   border-radius: 30px;
   font-weight: bold;
 }
+.footer {
+  background: #f1f8f4;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+}
+
+.footer h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.footer-trust {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0;
+  flex-wrap: wrap;
+}
+
+.footer-trust span {
+  background: #ffffff;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.footer-wa {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 14px 22px;
+  background: #25D366;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.footer-copy {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #555;
+}

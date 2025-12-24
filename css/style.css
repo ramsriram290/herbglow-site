@@ -481,3 +481,19 @@ body {
   border-radius: 30px;
   font-weight: bold;
 }
+/* =========================
+   FOOTER
+   ========================= */
+.site-footer {
+  background: #2f7d32;
+  color: #ffffff;
+  text-align: center;
+  padding: 24px 16px;
+  margin-top: 40px;
+}
+
+.site-footer a {
+  color: #c8f7c5;
+  text-decoration: none;
+  font-weight: bold;
+}

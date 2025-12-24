@@ -119,3 +119,11 @@ body {
 .whatsapp-float img {
   width: 55px;
 }
+/* ================= ABOUT SECTION =================
+   Controls look of About text */
+.about {
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.6;
+}

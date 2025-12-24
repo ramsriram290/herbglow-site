@@ -1,128 +1,90 @@
-
 <!DOCTYPE html>
-<html>
-<section class="about">
-  <h2>About HerbGlow</h2>
-
-  <p>
-    HerbGlow is a homegrown herbal care brand.
-    We focus on purity, simplicity, and real results.
-  </p>
-
-  <p>
-    Our products are handmade using neem, turmeric,
-    multani mitti, and rose.
-  </p>
-
-  <p class="bold">
-    No chemicals. No shortcuts.  
-    Only honest skincare for Indian skin.
-  </p>
-</section>    <h1>HerbGlow</h1>
-  <h2>About HerbGlow</h2>
-  <p>
-    HerbGlow is a homegrown herbal care brand focused on purity,
-    simplicity, and results. Our products are handcrafted using
-    traditional herbal ingredients like neem, turmeric, multani mitti,
-    and rose.
-  </p>
-
-  <p>
-    No harsh chemicals. No shortcuts. Only honest skincare made
-    for Indian skin.
-  </p>
-</section><img src="https://picsum.photos/400/300" alt="Herbal Product">
-    <p>100% Pure Herbal • Handmade Care</p>
-    <a class="hero-btn" href="#products">Shop Now</a>
-  </div>
-</section><section class="products" id="products">
-<link rel="stylesheet" href="css/style.css">
+<html lang="en">
 <head>
-<div class="product-card">
-  <img src="images/facewash.jpg" alt="Herbal Face Wash">
-  <h2>Herbal Face Wash</h2>
-  <p>Gentle daily cleanser with neem & turmeric</p>
-  <p class="price">₹199</p>
-  <a href="https://wa.me/918861275896?text=Hi%20I%20want%20Herbal%20Face%20Wash">
-    Buy on WhatsApp
-  </a>
-</div>
+  <meta charset="UTF-8">
+  <title>HerbGlow – Pure Herbal Care</title>
 
-<div class="product-card">
-  <img src="images/hairpack.jpg" alt="Herbal Hair Pack">
-  <h2>Herbal Hair Pack</h2>
-  <p>Strengthens hair, reduces dandruff naturally</p>
-  <p class="price">₹249</p>
-  <a href="https://wa.me/918861275896?text=Hi%20I%20want%20Herbal%20Hair%20Pack">
-    Buy on WhatsApp
-  </a>
-</div><meta charset="UTF-8">
-<title>HerbGlow</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/style.css">
+  <!-- STEP 1:
+       CSS file link.
+       This must be inside <head>.
+       File path: css/style.css -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<h1 class="title">HerbGlow</h1>
-<p class="tag">🌿 100% Pure Herbal • Handmade Care</p>
+  <!-- ================= HEADER SECTION =================
+       Website brand name + tagline
+       This is what users see at top -->
+  <header class="site-header">
+    <h1>HerbGlow</h1>
+    <p>🌿 100% Pure Herbal · Handmade Care</p>
+  </header>
 
-<div class="card"> 
-  <h2>Herbal Face Pack</h2>
-  <p>Natural glow with multani mitti & rose</p>
-  <p class="price">₹149</p>
+  <!-- ================= PRODUCTS SECTION =================
+     All products grid container -->
+<section class="products-grid">
 
-  <a class="btn"
-     href="https://wa.me/918861275896?text=Hi%20I%20want%20Herbal%20Face%20Pack"
-     target="_blank">
-     Buy on WhatsApp
-  </a>
-</div>
+  <!-- ===== PRODUCT 1 ===== -->
+  <div class="product-card">
+    <!-- Product image (fixed herbal image) -->
+    <img
+      src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=800&q=80"
+      alt="Herbal Face Wash">
 
-<a class="float"
-   href="https://wa.me/918861275896"
-   target="_blank">
-   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
-</a>
-<footer class="footer">
-  <h3>HerbGlow</h3>
-  <p>Pure Herbal • Handmade Care</p>
+    <!-- Product name -->
+    <h2>Herbal Face Wash</h2>
 
-  <div class="footer-trust">
-    <span>🌿 100% Herbal</span>
-    <span>🧪 No Chemicals</span>
-    <span>👐 Handmade</span>
+    <!-- Description -->
+    <p>Gentle daily cleanser with neem & turmeric</p>
+
+    <!-- Price -->
+    <div class="price">₹199</div>
+
+    <!-- WhatsApp order link -->
+    <a class="buy-btn"
+       href="https://wa.me/918861275896?text=Hi%20I%20want%20Herbal%20Face%20Wash"
+       target="_blank">
+       Buy on WhatsApp
+    </a>
   </div>
 
-  <a class="footer-wa" 
-     href="https://wa.me/918861275896?text=Hi%20I%20want%20to%20order%20HerbGlow%20products"
+
+  <!-- ===== PRODUCT 2 ===== -->
+  <div class="product-card">
+    <!-- Product image -->
+    <img
+      src="https://images.unsplash.com/photo-1585232351009-aa87416fca90?auto=format&fit=crop&w=800&q=80"
+      alt="Herbal Face Pack">
+
+    <!-- Product name -->
+    <h2>Herbal Face Pack</h2>
+
+    <!-- Description -->
+    <p>Natural glow with multani mitti & rose</p>
+
+    <!-- Price -->
+    <div class="price">₹149</div>
+
+    <!-- WhatsApp order link -->
+    <a class="buy-btn"
+       href="https://wa.me/918861275896?text=Hi%20I%20want%20Herbal%20Face%20Pack"
+       target="_blank">
+       Buy on WhatsApp
+    </a>
+  </div>
+
+</section>>
+
+
+  <!-- ================= FLOATING WHATSAPP BUTTON =================
+       Always visible at bottom-right -->
+  <a href="https://wa.me/918861275896"
+     class="whatsapp-float"
      target="_blank">
-     Order on WhatsApp
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+         alt="WhatsApp">
   </a>
 
-  <p class="footer-copy">
-    © 2025 HerbGlow. All rights reserved.
-  </p>
-</footer>
 </body>
 </html>
-
-<section class="products">
-
-  <div class="product-card">
-    <img src="images/facewash.jpg" alt="Herbal Face Wash">
-    <h2>Herbal Face Wash</h2>
-    <p>Gentle cleansing with neem & turmeric</p>
-    <p class="price">₹199</p>
-    <a href="https://wa.me/918861275896?text=I%20want%20Herbal%20Face%20Wash">Buy on WhatsApp</a>
-  </div>
-
-  <div class="product-card">
-    <img src="images/facepack.jpg" alt="Herbal Face Pack">
-    <h2>Herbal Face Pack</h2>
-    <p>Natural glow with multani mitti & rose</p>
-    <p class="price">₹149</p>
-    <a href="https://wa.me/918861275896?text=I%20want%20Herbal%20Face%20Pack">Buy on WhatsApp</a>
-  </div>
-
-</section>

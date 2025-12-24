@@ -252,3 +252,47 @@ body {
 .buy-btn:hover {
   background: #1ebc59;
 }
+/* ================= HEADER STYLE ================= */
+.site-header {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f2f7f2;
+}
+
+.site-header h1 {
+  font-size: 36px;
+  margin: 0;
+  color: #1f5f2c;
+}
+
+.site-header p {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #2e7d32;
+  font-weight: 600;
+}
+/* ================= ABOUT SECTION ================= */
+.about {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 25px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 26px;
+  margin-bottom: 16px;
+  color: #1f5f2c;
+}
+
+.about p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.about-highlight {
+  font-weight: bold;
+  color: #1f7a3a;
+}

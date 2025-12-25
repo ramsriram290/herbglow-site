@@ -1,592 +1,111 @@
 /* =========================
-   GLOBAL SETTINGS
-   ========================= */
-body {
+   HerbGlow Theme – Global
+========================= */
+
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-  background: #f6f8f5;
-  color: #333;
+}
+
+body {
+  background: #f6fbf7;
+  color: #2f3e34;
+  line-height: 1.6;
 }
 
 /* =========================
-   HEADER
-   ========================= */
+   Header
+========================= */
 .site-header {
   text-align: center;
-  padding: 32px 16px;
-  background: #eef5ec;
+  padding: 30px 15px;
+  background: #e9f6ee;
 }
 
 .site-header h1 {
-  margin: 0;
   font-size: 32px;
-  color: #2f7d32;
+  color: #2e7d32;
 }
 
 .site-header p {
   margin-top: 8px;
   color: #4caf50;
-  font-size: 14px;
+  font-weight: 600;
 }
 
 /* =========================
-   ABOUT SECTION
-   ========================= */
+   Section titles
+========================= */
+section {
+  padding: 40px 15px;
+}
+
+section h2 {
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   About
+========================= */
 .about {
-  max-width: 700px;
-  margin: 40px auto;
-  padding: 0 20px;
-  text-align: center;
-  line-height: 1.7;
-}
-
-.about h2 {
-  color: #2f7d32;
-  margin-bottom: 12px;
-}
-
-/* =========================
-   PRODUCTS GRID
-   ========================= */
-.products {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 24px;
-  padding: 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-/* =========================
-   PRODUCT CARD
-   ========================= */
-.product-card {
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  text-align: center;
-}
-
-.product-card img {
-  width: 100%;
-  max-height: 220px;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 12px;
-}
-
-.product-card h3 {
-  margin: 10px 0 6px;
-}
-
-.price {
-  color: #2f7d32;
-  font-weight: bold;
-  font-size: 18px;
-  margin: 10px 0;
-}
-
-/* =========================
-   WHATSAPP BUTTON
-   ========================= */
-.buy-btn {
-  display: inline-block;
-  padding: 12px 24px;
-  background: #25d366;
-  color: white;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* =========================
-   MOBILE FIX
-   ========================= */
-@media (max-width: 480px) {
-  .site-header h1 {
-    font-size: 26px;
-  }
-}/* ================= GENERAL PAGE STYLE =================
-   Applies to full page */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f7f8f4;
-  text-align: center;
-}
-
-/* ================= HEADER ================= */
-.site-header {
-  padding: 20px;
-}
-
-.site-header h1 {
-  margin: 0;
-  font-size: 32px;
-}
-
-.site-header p {
-  color: #2e7d32;
-  font-weight: bold;
-}
-/* ================= PRODUCTS GRID =================
-   Controls 2-column layout on desktop */
-.products-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
-/* ================= PRODUCT CARD ================= */
-.product-card {
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  text-align: center;
-}
-
-/* Product image */
-.product-card img {
-  width: 100%;
-  border-radius: 12px;
-}
-
-/* Product price */
-.price {
-  color: #2e7d32;
-  font-size: 22px;
-  font-weight: bold;
-  margin: 10px 0;
-}
-
-/* Buy button */
-.buy-btn {
-  display: inline-block;
-  background: #25d366;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-}
-/* ================= PRODUCTS SECTION ================= */
-.products {
-  padding: 20px;
-}
-
-/* ================= PRODUCT CARD =================
-   This controls white card look */
-.product-card {
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 320px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-}
-
-/* Product image */
-.product-card img {
-  width: 100%;
-  border-radius: 12px;
-}
-
-/* Product title */
-.product-card h2 {
-  margin: 15px 0 10px;
-}
-
-/* Price style */
-.price {
-  color: #2e7d32;
-  font-size: 22px;
-  font-weight: bold;
-  margin: 10px 0;
-}
-
-/* Buy button */
-.buy-btn {
-  display: inline-block;
-  background: #25d366;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* ================= FLOATING WHATSAPP ================= */
-.whatsapp-float {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-}
-
-.whatsapp-float img {
-  width: 55px;
-}
-/* ================= ABOUT SECTION =================
-   Controls look of About text */
-.about {
-  padding: 30px 20px;
-  text-align: center;
-  font-size: 16px;
-  line-height: 1.6;
-}
-/* ================= PRODUCTS SECTION ================= */
-
-.products {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  padding: 20px;
-}
-
-.product-card {
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 15px;
-  text-align: center;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-}
-
-.product-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 12px;
-}
-
-.product-card h3 {
-  margin: 12px 0 6px;
-}
-
-.product-card p {
-  font-size: 14px;
-  color: #444;
-}
-
-.price {
-  font-size: 18px;
-  color: #2e7d32;
-  font-weight: bold;
-  margin: 8px 0;
-}
-
-.buy-btn {
-  display: inline-block;
-  background: #25d366;
-  color: #fff;
-  padding: 10px 16px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-}
-/* ABOUT SECTION STYLE */
-.about-section {
   max-width: 900px;
-  margin: 40px auto;
-  padding: 20px;
+  margin: auto;
   text-align: center;
+  color: #445c4a;
 }
 
-.about-section h2 {
-  font-size: 26px;
-  margin-bottom: 15px;
-  color: #1f5f2c;
-}
-
-.about-section p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #333;
-  margin-bottom: 10px;
-}
-/* ================= PRODUCTS GRID ================= */
+/* =========================
+   Products Grid
+========================= */
 .products {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
   max-width: 1100px;
-  margin: 40px auto;
-  padding: 0 16px;
+  margin: auto;
 }
-/* ================= PRODUCT CARD ================= */
+
+/* =========================
+   Product Card
+========================= */
 .product-card {
   background: #ffffff;
   border-radius: 16px;
-  padding: 18px;
+  padding: 20px;
   text-align: center;
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
-/* ================= PRODUCT IMAGE ================= */
+
 .product-card img {
   width: 100%;
-  height: 220px;
-  object-fit: cover;   /* prevents distortion */
   border-radius: 12px;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
+
 .product-card h3 {
-  font-size: 20px;
-  margin: 8px 0;
+  color: #2e7d32;
+  margin-bottom: 8px;
 }
 
 .product-card p {
   font-size: 14px;
   color: #555;
-  margin-bottom: 10px;
-}
-
-.product-card .price {
-  font-size: 18px;
-  font-weight: bold;
-  color: #1f7a3a;
-  margin-bottom: 12px;
-}
-/* ================= BUY BUTTON ================= */
-.buy-btn {
-  display: inline-block;
-  padding: 12px 20px;
-  background: #25d366;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 25px;
-  font-weight: 600;
-}
-
-.buy-btn:hover {
-  background: #1ebc59;
-}
-/* ================= HEADER STYLE ================= */
-.site-header {
-  text-align: center;
-  padding: 40px 20px;
-  background: #f2f7f2;
-}
-
-.site-header h1 {
-  font-size: 36px;
-  margin: 0;
-  color: #1f5f2c;
-}
-
-.site-header p {
-  margin-top: 8px;
-  font-size: 16px;
-  color: #2e7d32;
-  font-weight: 600;
-}
-/* ================= ABOUT SECTION ================= */
-.about {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 25px 20px;
-  text-align: center;
-}
-
-.about h2 {
-  font-size: 26px;
-  margin-bottom: 16px;
-  color: #1f5f2c;
-}
-
-.about p {
-  font-size: 16px;
-  line-height: 1.7;
-  color: #444;
-  margin-bottom: 12px;
-}
-
-.about-highlight {
-  font-weight: bold;
-  color: #1f7a3a;
-}
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f6f8f5;
-}
-
-/* HEADER */
-.site-header {
-  text-align: center;
-  padding: 40px 20px;
-  background: #eef5ee;
-}
-
-.site-header h1 {
-  margin: 0;
-  font-size: 36px;
-  color: #1f5f2c;
-}
-
-.site-header p {
-  margin-top: 8px;
-  color: #2e7d32;
-  font-weight: bold;
-}
-
-/* ABOUT */
-.about {
-  max-width: 800px;
-  margin: 30px auto;
-  padding: 20px;
-  text-align: center;
-}
-
-.about-highlight {
-  font-weight: bold;
-  color: #1f7a3a;
-}
-
-/* PRODUCTS */
-.products {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
-.product-card {
-  background: #fff;
-  border-radius: 16px;
-  padding: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-  text-align: center;
-}
-
-.product-card img {
-  width: 100%;
-  border-radius: 12px;
 }
 
 .price {
-  display: block;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
-  color: #1f7a3a;
-  margin: 10px 0;
+  color: #2e7d32;
+  margin: 12px 0;
 }
 
-.buy-btn {
-  display: inline-block;
-  padding: 12px 20px;
-  background: #25d366;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: bold;
-}
 /* =========================
-   FOOTER
-   ========================= */
-.site-footer {
-  background: #2f7d32;
-  color: #ffffff;
-  text-align: center;
-  padding: 24px 16px;
-  margin-top: 40px;
-}
-
-.site-footer a {
-  color: #c8f7c5;
-  text-decoration: none;
-  font-weight: bold;
-}
-/* =========================
-   WHATSAPP FLOAT BUTTON
-   ========================= */
-.whatsapp-float {
-  position: fixed;
-  width: 56px;
-  height: 56px;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25d366;
-  border-radius: 50%;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-}
-
-.whatsapp-float img {
-  width: 30px;
-  height: 30px;
-}
-/* ==============================
-   PRODUCT MOCKUP (IMAGE-FREE)
-   ============================== */
-
-.product-mockup {
-  height: 180px;
-  border-radius: 14px;
-  background: linear-gradient(135deg, #e6f5ea, #f4fbf6);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  color: #2f6b3c;
-  text-align: center;
-  padding: 20px;
-  margin-bottom: 15px;
-  border: 1px dashed #9bc8a5;
-}
-
-.product-mockup span {
-  font-size: 16px;
-}
-/* ================= PRODUCT CARD ================= */
-
-.product-card {
-  background: #ffffff;
-  border-radius: 18px;
-  padding: 22px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  text-align: center;
-  max-width: 320px;
-  margin: 20px auto;
-}
-
-/* Mockup box (image placeholder) */
-.product-mockup {
-  height: 160px;
-  border-radius: 14px;
-  background: linear-gradient(135deg, #e7f6ec, #f4fbf6);
-  border: 1px dashed #9bc8a5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  color: #2f6b3c;
-  margin-bottom: 16px;
-}
-
-/* Product text */
-.product-card h3 {
-  margin: 8px 0;
-  font-size: 20px;
-}
-
-.product-desc {
-  font-size: 14px;
-  color: #555;
-  margin-bottom: 10px;
-}
-
-.product-price {
-  font-size: 20px;
-  font-weight: bold;
-  color: #2f8f46;
-  margin-bottom: 14px;
-}
-
-/* WhatsApp button FIX */
+   WhatsApp Button
+========================= */
 .buy-btn {
   display: inline-block;
   padding: 12px 22px;
@@ -594,35 +113,21 @@ body {
   color: #fff;
   text-decoration: none;
   border-radius: 30px;
-  font-weight: 600;
-  font-size: 14px;
+  font-weight: bold;
 }
 
-.buy-btn:hover {
-  background: #1ebe5d;
-}
-/* ================= TRUST SECTION ================= */
-
-.trust-section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
-  max-width: 360px;
-  margin: 40px auto;
-}
-
-.trust-item {
-  background: #f1faf4;
-  border-radius: 14px;
-  padding: 16px;
+/* =========================
+   Footer
+========================= */
+footer {
+  background: #2e7d32;
+  color: #fff;
   text-align: center;
-  font-size: 14px;
-  font-weight: 600;
-  color: #2f6b3c;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+  padding: 25px 10px;
+  margin-top: 50px;
 }
 
-.trust-item span {
-  display: block;
-  margin-top: 6px;
+footer p {
+  font-size: 14px;
+  margin: 6px 0;
 }

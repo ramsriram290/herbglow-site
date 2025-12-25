@@ -541,3 +541,63 @@ body {
 .product-mockup span {
   font-size: 16px;
 }
+/* ================= PRODUCT CARD ================= */
+
+.product-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  text-align: center;
+  max-width: 320px;
+  margin: 20px auto;
+}
+
+/* Mockup box (image placeholder) */
+.product-mockup {
+  height: 160px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #e7f6ec, #f4fbf6);
+  border: 1px dashed #9bc8a5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #2f6b3c;
+  margin-bottom: 16px;
+}
+
+/* Product text */
+.product-card h3 {
+  margin: 8px 0;
+  font-size: 20px;
+}
+
+.product-desc {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2f8f46;
+  margin-bottom: 14px;
+}
+
+/* WhatsApp button FIX */
+.buy-btn {
+  display: inline-block;
+  padding: 12px 22px;
+  background: #25d366;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.buy-btn:hover {
+  background: #1ebe5d;
+}

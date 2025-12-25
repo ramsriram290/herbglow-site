@@ -601,3 +601,28 @@ body {
 .buy-btn:hover {
   background: #1ebe5d;
 }
+/* ================= TRUST SECTION ================= */
+
+.trust-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  max-width: 360px;
+  margin: 40px auto;
+}
+
+.trust-item {
+  background: #f1faf4;
+  border-radius: 14px;
+  padding: 16px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2f6b3c;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+}
+
+.trust-item span {
+  display: block;
+  margin-top: 6px;
+}

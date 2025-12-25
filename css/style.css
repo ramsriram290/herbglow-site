@@ -519,3 +519,25 @@ body {
   width: 30px;
   height: 30px;
 }
+/* ==============================
+   PRODUCT MOCKUP (IMAGE-FREE)
+   ============================== */
+
+.product-mockup {
+  height: 180px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #e6f5ea, #f4fbf6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #2f6b3c;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 15px;
+  border: 1px dashed #9bc8a5;
+}
+
+.product-mockup span {
+  font-size: 16px;
+}
